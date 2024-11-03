@@ -1,8 +1,8 @@
 # Getting Started
 
-Welcome to your new project.
+Welcome to PhoneshopAI project.
 
-It contains these folders and files, following our recommended project layout:
+Following is the recommended project layout:
 
 File or Folder | Purpose
 ---------|----------
@@ -13,12 +13,20 @@ File or Folder | Purpose
 `readme.md` | this getting started guide
 
 
-## Next Steps
+## How to run this project
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
+### Prerequisites:
+  - NodeJs/NPM should be installed
+  - Install cds development kit
+    ```
+    npm install -g @sap/cds-dk
+### Deploy the database artifacts and load the table with data from csv
+  - Open the terminal and run the following command from root folder of the project
+    ``` bash
+    npm install sqlite3 
+    cds deploy --to sqlite:phoneshop.db
+### Run the project
+    cds watch
 
 ## Learn More
 
